@@ -10,6 +10,7 @@
       font-family: 'Montserrat', sans-serif;
       background-color: #121212;
       color: #fff;
+      line-height: 1.6;
     }
     header {
       text-align: center;
@@ -34,7 +35,7 @@
       color: #00D8FF;
       margin-bottom: 40px;
     }
-    .skills, .projects {
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
@@ -62,57 +63,97 @@
     a:hover {
       text-decoration: underline;
     }
+    ul { padding-left: 20px; }
   </style>
 </head>
 <body>
 
+  <!-- HERO -->
   <header>
     <h1>Aditya Patel</h1>
-    <p>Unity Developer • Game Programmer • Tech Enthusiast</p>
+    <p>Unity Developer • Game Programmer • Event Organizer</p>
+    <p>📧 <a href="mailto:ajpatel083@gmail.com">ajpatel083@gmail.com</a> | 📞 +91-8108056494</p>
   </header>
 
+  <!-- SKILLS -->
   <section>
     <h2>Skills</h2>
-    <div class="skills">
-      <div class="card">⚙️ Unity 3D</div>
-      <div class="card">💻 C# Programming</div>
-      <div class="card">🎨 Game UI/UX</div>
-      <div class="card">🌐 WebGL Builds</div>
-      <div class="card">📦 Physics & Mechanics</div>
-      <div class="card">🕹️ Game Design</div>
+    <div class="grid">
+      <div class="card">⚙️ Unity 3D (Beginner–Intermediate)</div>
+      <div class="card">💻 C# Programming (Beginner–Intermediate)</div>
+      <div class="card">🎮 Game Physics & Mechanics</div>
+      <div class="card">🌐 WebGL Integration</div>
+      <div class="card">🎨 UI/UX in Games</div>
+      <div class="card">📊 Event Management & Leadership</div>
+      <div class="card">✂️ Video Editing</div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section>
     <h2>Projects</h2>
-    <div class="projects">
+    <div class="grid">
       <div class="card">
-        <img src="project1.png" alt="Project Screenshot">
-        <h3>3D Cargo Container Visualizer</h3>
-        <p>Interactive Unity WebGL project that dynamically loads containers and boxes using JSON input.</p>
-        <a href="#">🔗 View Project</a>
+        <h3>3D Cargo Visualizer</h3>
+        <p>A Unity-powered simulation tool to visualize cargo placement in 20ft/40ft containers.</p>
+        <ul>
+          <li>Custom box-fitting algorithm</li>
+          <li>Real-time 3D visualization</li>
+          <li>WebGL integration with HTML/JS controls</li>
+        </ul>
       </div>
       <div class="card">
-        <img src="project2.png" alt="Game Screenshot">
         <h3>Cosmic Rocket</h3>
-        <p>A 3D space game built in Unity featuring checkpoints, cosmic routes, and survival mechanics.</p>
-        <a href="#">🔗 Play Game</a>
+        <p>A physics-driven Unity game featuring rocket controls, checkpoints, and progressive difficulty.</p>
+        <ul>
+          <li>Rigidbody-based thrust & rotation</li>
+          <li>Particle effects & audio</li>
+          <li>Scene management & scoring system</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Rocket Boost Prototype</h3>
+        <p>3-level Unity prototype with collision systems, collectibles, and balanced gameplay.</p>
       </div>
     </div>
   </section>
 
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.Tech in Computer Engineering</strong> — Institute Of Advanced Research, Gandhinagar</p>
+      <p>Current CGPA: 6.0 (3rd year)</p>
+      <p><strong>Matriculation (78%)</strong> — St. Joseph’s School, Mumbai</p>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section>
+    <h2>Languages</h2>
+    <div class="grid">
+      <div class="card">🇬🇧 English – Fluent</div>
+      <div class="card">🇮🇳 Hindi – Fluent</div>
+      <div class="card">🇮🇳 Gujarati – Fluent</div>
+      <div class="card">🇮🇳 Marathi – Beginner</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
   <section>
     <h2>About Me</h2>
     <p style="text-align:center; max-width:800px; margin:auto;">
-      I’m Aditya, a Unity developer passionate about creating immersive experiences. 
-      From game mechanics to container visualizers, I love bringing ideas to life with code and creativity.
+      I’m a Computer Engineering student and Unity developer passionate about building interactive experiences.  
+      As Gaming Head of my college’s club, I organized events, honed my leadership skills, and combined creativity with technology.  
+      I love making games, experimenting with physics-based mechanics, and building tools that turn complex problems into fun, interactive solutions.
     </p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Aditya Patel | <a href="mailto:ajpatel083@gmail.com">Contact Me</a></p>
+    <p>© 2025 Aditya Patel | Built with Unity + Web Tech</p>
+    <p><a href="Aditya's Resume.pdf" download>📄 Download My Resume</a></p>
   </footer>
 
 </body>
 </html>
-
