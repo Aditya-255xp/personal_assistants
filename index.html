@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Patel | Unity Developer</title>
-  <!-- Readable font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -68,12 +67,12 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Widened slightly for text-heavy cards */
       gap: 20px;
     }
     .card {
       background: rgba(18, 18, 30, 0.9);
-      padding: 20px;
+      padding: 25px;
       border-radius: 14px;
       border: 1px solid rgba(124,58,237,0.3);
       box-shadow: 0 0 15px rgba(124,58,237,0.4);
@@ -87,7 +86,14 @@
       margin-top: 0;
       color: #00d8ff;
     }
-    ul { padding-left: 18px; }
+    .card .tech-stack {
+        font-size: 0.85em;
+        color: #7c3aed;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+    ul { padding-left: 18px; margin-bottom: 20px; }
     footer {
       text-align: center;
       padding: 25px;
@@ -128,7 +134,6 @@
 </head>
 <body>
 
-  <!-- HERO -->
   <header>
     <div class="hero">
       <img src="myphoto.jpg" alt="Aditya Patel">
@@ -138,7 +143,6 @@
     </div>
   </header>
 
-  <!-- ABOUT -->
   <section>
     <h2>About Me</h2>
     <p style="text-align:center; max-width:800px; margin:auto;">
@@ -148,7 +152,6 @@
     </p>
   </section>
 
-  <!-- OBJECTIVE -->
   <section>
     <h2>Objective</h2>
     <p style="text-align:center; max-width:800px; margin:auto;">
@@ -158,7 +161,6 @@
     </p>
   </section>
 
-  <!-- SKILLS -->
   <section>
     <h2>Skills</h2>
     <div class="grid">
@@ -172,7 +174,6 @@
     </div>
   </section>
 
-  <!-- INTERNSHIP -->
   <section>
     <h2>Internship</h2>
     <div class="card">
@@ -186,11 +187,24 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section>
     <h2>Projects</h2>
     <div class="grid">
       <div class="card">
+        <span class="tech-stack">Unity 6 | C# | TextMeshPro</span>
+        <h3>FPS Aim Trainer - Data-Driven Tool</h3>
+        <p>A high-performance performance tool designed to measure and improve player accuracy and reaction time.</p>
+        <ul>
+          <li>Engineered a scalable architecture utilizing the <strong>Singleton pattern</strong> for centralized game state management.</li>
+          <li>Developed a real-time analytics engine calculating <strong>shot-to-hit accuracy</strong> and reaction time with millisecond precision.</li>
+          <li>Implemented <strong>persistent data</strong> using PlayerPrefs to track lifetime hits and all-time high scores.</li>
+          <li>Designed a <strong>multi-scene state machine</strong> with a static data bridge to transfer performance metrics.</li>
+          <li>Built a high-fidelity shooting system with <strong>hitscan raycasting</strong> and procedural camera recoil.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="tech-stack">Unity | C# | New Input System</span>
         <h3>Rocket Boost Prototype</h3>
         <p>A physics-based Unity prototype with thrust mechanics, collectibles, and balanced gameplay.</p>
         <ul>
@@ -203,7 +217,6 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
   <section>
     <h2>Education</h2>
     <div class="card">
@@ -211,7 +224,6 @@
     </div>
   </section>
 
-  <!-- LANGUAGES -->
   <section>
     <h2>Languages</h2>
     <div class="grid">
@@ -222,7 +234,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Aditya Patel | Built like a Gamer’s Den 🎮</p>
     <p>
